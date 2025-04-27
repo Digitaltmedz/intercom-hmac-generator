@@ -1,7 +1,8 @@
 export default function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Lägg till denna rad!
+  
   const crypto = require('crypto');
-
-  const secretKey = 'Bz0J0G_zT-h47thwLoa8DB5tCQFM-zjbNd8celcu'; // <-- Byt ut till din riktiga Secret Key!
+  const secretKey = 'Bz0J0G_zT-h47thwLoa8DB5tCQFM-zjbNd8celcu'; // <-- Din riktiga secret key!
 
   const { userId } = req.query;
 

@@ -2,7 +2,7 @@
   "name": "kursapp",
   "private": true,
   "version": "0.1.0",
-  "description": "Kursapp för en Webbas-kund: backend med Webbas-synk och mobilapp (iOS/Android) för video, ljud, PDF och forum.",
+  "description": "Kursapp f\u00f6r en Webbas-kund: backend med Webbas-synk och mobilapp (iOS/Android) f\u00f6r video, ljud, PDF och forum.",
   "packageManager": "pnpm@10.33.0",
   "scripts": {
     "api:dev": "pnpm --filter @kursapp/api dev",

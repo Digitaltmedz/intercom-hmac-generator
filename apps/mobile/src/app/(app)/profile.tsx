@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Alert } from "react-native";
 
 import { ThemedText } from "@/components/themed-text";
@@ -12,6 +12,9 @@ export default function ProfileScreen() {
   const router = useRouter();
   const { me, refresh, signOut } = useAuth();
   const [name, setName] = useState(me?.name ?? "");
+  useEffect(() => {
+    setName(me?.name ?? "");
+  }, [me?.name]);
   const [saving, setSaving] = useState(false);
   const blocked = useApi(() => api.blocked(), []);
 
